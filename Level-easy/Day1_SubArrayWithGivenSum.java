@@ -18,20 +18,14 @@ class Day1_SubArrayWithGivenSum{
                 m[j] = sc.nextInt();
             }
             
-            Solution obj = new Solution();
-            ArrayList<Integer> res = obj.subarraySum(m, n, s);
+            ArrayList<Integer> res = subarraySum(m, n, s);
             for(int ii = 0;ii<res.size();ii++)
                 System.out.print(res.get(ii) + " ");
             System.out.println();
         }
     }
-
-}// } Driver Code Ends
-
-
-class Solution
-{
-    //Function to find a continuous sub-array which adds up to a given number.
+	
+	 //Function to find a continuous sub-array which adds up to a given number.
     static ArrayList<Integer> subarraySum(int[] arr, int n, int s) 
     {  
         int sum = 0;
@@ -55,4 +49,8 @@ class Solution
             }
             sum = 0;
         }
+        
+
+}// } Driver Code Ends
+
         
